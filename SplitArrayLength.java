@@ -12,10 +12,34 @@ public class SplitArrayLength {
         String[] splitArray1 = splitString(str);
         String[][] arrayWithLen = storeIn2DArray(splitArray1);
         print(arrayWithLen);
+
+        String[] smallLarge = getSmallLarge(arrayWithLen);
+
+        System.out.println("Smallest " + smallLarge[1]);
+        System.out.println("largest " + smallLarge[0]);
         
         // Enter the string: Both the arrays are not same, there is some logical mistake
         // Hello_world_my_name_is_ishaan_
         // Hello_world_my_name_is_ishaan_
+    }
+
+    public static String[] getSmallLarge(String[][] arr){
+        int len = arr.length;
+        String[] result = new String[2];
+        String max = arr[0][1];
+        String min = arr[0][1];
+        for(int i=0;i<len;i++){
+            String size = arr[i][1];
+            if(size.compareTo(max) > 0){
+                result[0] = arr[i][0];
+                max = size;
+            }
+            else{
+                result[1] = arr[i][0];
+                min = size;
+            }
+        }
+        return result;
     }
 
     public static void print(String[][] arr){
