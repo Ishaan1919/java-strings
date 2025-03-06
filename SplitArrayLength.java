@@ -17,6 +17,7 @@ public class SplitArrayLength {
 
         System.out.println("Smallest " + smallLarge[1]);
         System.out.println("largest " + smallLarge[0]);
+        input.close();
         
         // Enter the string: Both the arrays are not same, there is some logical mistake
         // Hello_world_my_name_is_ishaan_

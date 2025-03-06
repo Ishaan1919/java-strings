@@ -21,7 +21,7 @@ public class SplitString {
         }
         print(splitArray1);
         print(splitArray2);
-        
+        input.close();
         // Enter the string: Both the arrays are not same, there is some logical mistake
         // Hello_world_my_name_is_ishaan_
         // Hello_world_my_name_is_ishaan_
