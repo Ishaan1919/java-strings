@@ -25,7 +25,7 @@ public class GetSubstring{
         String substr2 = getSubstringUsingInbuiltFunction(string,startIndex,endIndex);
 
         if(substr1.equals(substr2)){
-            System.out.println("Both functions are working fine");
+            System.out.println("The substrings " + substr1 + " are same for both the functions");
         }
         else{
             System.out.println("There is some logical error");
