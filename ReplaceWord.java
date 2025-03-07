@@ -15,6 +15,12 @@ public class ReplaceWord{
 		String res = replaceWord(s,word,newWord);
 		System.out.printf("String after replacement of %s with the %s is %s",word,newWord,res);
 		input.close();
+
+
+        // Enter the String: hello hello helloing
+        // Enter the word you want to replace in the string: hello
+        // Enter the word you want to replace with: bell
+        // String after replacement of hello with the bell is bell bell belling
 	}
 	
 	public static String replaceWord(String s, String word, String newWord){
