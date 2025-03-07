@@ -1,6 +1,6 @@
 public class NullPtrException {
     public static void main(String[] args) {
-        generateException();
+        // generateException();
         handleException();
     }
 
