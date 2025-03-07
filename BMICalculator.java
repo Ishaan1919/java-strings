@@ -49,7 +49,7 @@ public class BMICalculator {
     public static void displayResults(String[][] results) {
         System.out.printf("%-10s %-10s %-10s %-15s\n", "Height(cm)", "Weight(kg)", "BMI", "Status");
         for (String[] row : results) {
-            System.out.printf("%-10s %-10s %-10s %-15s\n", row[0], row[1], row[2], row[3]);
+            System.out.printf("%-10s %-10s %-10.5s %-15s\n", row[0], row[1], row[2], row[3]);
         }
     }
     
