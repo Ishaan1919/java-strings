@@ -4,6 +4,7 @@ public class CountVowelsConsonants {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter the string: ");
         String s = input.nextLine();
         int[] count = countVowelsConsonants(s);
         System.out.println("Number of Vowels are: " + count[0]);
